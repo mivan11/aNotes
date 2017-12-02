@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/novak"
+        android:background="@android:drawable/ic_menu_info_details"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="499dp" />
+
+    <TextView
+        android:text="aNotes"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="false"
+        android:fontFamily="cursive"
+        android:layout_height="45dp"
+        android:typeface="serif"
+        android:layout_width="150dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button2"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@android:drawable/ic_input_add"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_alignBaseline="@+id/novak"
+        android:layout_alignBottom="@+id/novak"
+        android:layout_toLeftOf="@+id/novak"
+        android:layout_toStartOf="@+id/novak" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:maxLines="10"
+        android:ellipsize="end"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:divider="@android:color/holo_green_dark"
+        android:dividerHeight="3dp" />
+
+</RelativeLayout>

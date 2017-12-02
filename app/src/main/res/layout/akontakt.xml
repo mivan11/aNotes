@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="24sp"
+        android:text="aNotes"
+        android:textStyle="normal|bold|italic"
+        android:textAllCaps="false"
+        android:fontFamily="cursive"
+        android:layout_height="45dp"
+        android:typeface="serif"
+        android:layout_width="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignBaseline="@+id/eml"
+        android:layout_alignBottom="@+id/eml"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/eml"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp"
+        android:background="@android:drawable/sym_action_email"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textView6"
+        android:textSize="19sp"
+        android:textAlignment="textStart"
+        android:lineSpacingExtra="10sp"
+        android:background="@android:color/background_dark"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/eml"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
